@@ -42,7 +42,6 @@ describe('Корзина', () => {
     it('ПУСТАЯ', () => {
         const app = renderer({});
         const {container, getByRole, getByText} = render(app);
-        //screen.logTestingPlaygroundURL();
         expect(getByText(/Cart is empty/)).toBeInTheDocument();
 
     })
